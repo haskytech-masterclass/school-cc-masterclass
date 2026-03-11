@@ -38,17 +38,27 @@ On your new repo page:
 
 ### 3. Log in to Claude Code
 
-Once VS Code loads in your browser, open the terminal (`` Ctrl+` ``) and run:
+Once VS Code loads in your browser:
 
+**Terminal 1:**
 ```bash
-bash login.sh
+claude
 ```
+- Select **option 2** — "Anthropic Console account"
+- A browser tab will open — sign in with your Anthropic Console account
+- After signing in, the browser will show an error page — **that's normal**
+- **Copy the URL** from your browser address bar (it starts with `http://localhost...`)
 
-Follow the instructions — it will open a sign-in page. After signing in, your browser will show an error page (that's normal). Copy the URL from your browser, come back to the terminal, paste it, and press **Enter** then **Ctrl+D**.
+**Terminal 2** (open a new terminal tab with `` Ctrl+Shift+` ``):
+```bash
+bash callback.sh
+```
+- Paste the URL you copied, press **Enter**, then **Ctrl+D**
+- You should see "Login successful!"
 
 ### 4. Start Claude Code
 
-Once logged in, type:
+Go back to Terminal 1. Claude Code should now be ready. If not, run:
 
 ```bash
 claude
