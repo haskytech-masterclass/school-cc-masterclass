@@ -2,7 +2,23 @@
 
 Build software with AI using Claude Code — an AI coding assistant that runs in your terminal.
 
-## Getting Started
+## Before the Masterclass
+
+Please complete these steps **before** the session:
+
+### 1. Create a GitHub account (if you don't have one)
+- Go to [github.com](https://github.com) and sign up (free)
+
+### 2. Join our GitHub organization
+- Click the invite link shared by your instructor
+- Accept the invitation
+
+### 3. Create an Anthropic Console account
+- Go to [console.anthropic.com](https://console.anthropic.com) and sign up (free, no credit card needed)
+- Click the invite link shared by your instructor to join the masterclass organization
+- This is what powers Claude Code — your instructor covers the cost
+
+## Getting Started (During the Masterclass)
 
 ### 1. Create your own repo from this template
 
@@ -22,11 +38,13 @@ On your new repo page:
 
 ### 3. Start Claude Code
 
-Once VS Code loads in your browser, open the terminal (`Ctrl+`` `) and type:
+Once VS Code loads in your browser, open the terminal (`` Ctrl+` ``) and type:
 
 ```bash
 claude
 ```
+
+When prompted, select **"Anthropic Console account"** and sign in with the account you created in step 3 above.
 
 That's it — you're ready to go!
 
