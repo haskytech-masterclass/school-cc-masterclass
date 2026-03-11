@@ -9,7 +9,7 @@
       "version": "3.12"
     }
   },
-  "postCreateCommand": "npm install -g @anthropic-ai/claude-code && mkdir -p ~/.claude && echo '{\"env\":{\"ANTHROPIC_API_KEY\":\"'$ANTHROPIC_API_KEY'\"}}' > ~/.claude/settings.json && echo '✅ Claude Code installed. Type: claude'",
+  "postCreateCommand": "npm install -g @anthropic-ai/claude-code && claude -p 'hello' --max-turns 1 > /dev/null 2>&1 && echo '✅ Claude Code installed and ready. Type: claude'",
   "hostRequirements": {
     "cpus": 2,
     "memory": "4gb",
