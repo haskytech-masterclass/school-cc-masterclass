@@ -9,7 +9,7 @@
       "version": "3.12"
     }
   },
-  "postCreateCommand": "npm install -g @anthropic-ai/claude-code && echo '\u2705 Claude Code installed. Type: claude'",
+  "postCreateCommand": "npm install -g @anthropic-ai/claude-code && mkdir -p ~/.claude && echo '{\"env\":{\"ANTHROPIC_API_KEY\":\"'$ANTHROPIC_API_KEY'\"}}' > ~/.claude/settings.json && echo '✅ Claude Code installed. Type: claude'",
   "hostRequirements": {
     "cpus": 2,
     "memory": "4gb",
@@ -23,6 +23,6 @@
     }
   },
   "remoteEnv": {
-    "ANTHROPIC_API_KEY": ""
+    "ANTHROPIC_API_KEY": "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"
   }
 }
