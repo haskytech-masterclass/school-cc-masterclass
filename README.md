@@ -36,15 +36,23 @@ On your new repo page:
 - Click **"Create codespace on main"**
 - Wait ~60 seconds for the environment to build
 
-### 3. Start Claude Code
+### 3. Log in to Claude Code
 
-Once VS Code loads in your browser, open the terminal (`` Ctrl+` ``) and type:
+Once VS Code loads in your browser, open the terminal (`` Ctrl+` ``) and run:
+
+```bash
+bash login.sh
+```
+
+Follow the instructions — it will open a sign-in page. After signing in, your browser will show an error page (that's normal). Copy the URL from your browser, come back to the terminal, paste it, and press **Enter** then **Ctrl+D**.
+
+### 4. Start Claude Code
+
+Once logged in, type:
 
 ```bash
 claude
 ```
-
-When prompted, select **"Anthropic Console account"** and sign in with the account you created in step 3 above.
 
 That's it — you're ready to go!
 
