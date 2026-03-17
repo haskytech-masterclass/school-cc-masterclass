@@ -269,13 +269,13 @@ To reduce flaky tests, normalize the test environment:
 
 ```bash
 BRANCH=$(git branch --show-current)
-if [[ "$BRANCH" != dev/* ]]; then
-  echo "ERROR: You are on '$BRANCH'. Must be on a dev/* branch."
+if [[ "$BRANCH" != feat/* ]]; then
+  echo "ERROR: You are on '$BRANCH'. Must be on a feat/* branch."
   exit 1
 fi
 ```
 
-Do NOT run quality checks on `main`. All work happens on `dev/*` branches.
+Do NOT run quality checks on `main`. All work happens on `feat/*` branches.
 
 ### Step 1: Verify lock file is in sync
 

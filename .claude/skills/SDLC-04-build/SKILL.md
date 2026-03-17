@@ -40,7 +40,7 @@ SDLC-02 (frontend-design)              SDLC-03 (architecture)
 
 ### 0. Check Branch
 
-**Before doing anything, verify you are on a `dev/*` branch:**
+**Before doing anything, verify you are on a `feat/*` branch:**
 
 ```bash
 # Skip if not a git repo
@@ -48,9 +48,9 @@ if ! git rev-parse --is-inside-work-tree &>/dev/null; then
   echo "WARNING: Not a git repository. Skipping branch check."
 else
   BRANCH=$(git branch --show-current)
-  if [[ "$BRANCH" != dev/* ]]; then
-    echo "ERROR: You are on '$BRANCH'. All work must be on a dev/* branch."
-    echo "Create one with: git checkout -b dev/your-feature-name"
+  if [[ "$BRANCH" != feat/* ]]; then
+    echo "ERROR: You are on '$BRANCH'. All work must be on a feat/* branch."
+    echo "Create one with: git checkout -b feat/your-feature-name"
     exit 1
   fi
 fi
@@ -59,10 +59,10 @@ fi
 **NEVER commit directly to `main`.** Only the platform team merges to main. If you are on `main`, create a dev branch first:
 
 ```bash
-git checkout -b dev/describe-the-work
+git checkout -b feat/describe-the-work
 ```
 
-Branch naming: `dev/add-invoice-export`, `dev/fix-login-timeout`, `dev/update-dashboard`
+Branch naming: `feat/add-invoice-export`, `feat/fix-login-timeout`, `feat/ENG-042-update-dashboard`
 
 ### 0b. Check for Existing Specs
 
